@@ -21,6 +21,7 @@ int main() {
 
     // Get number of days
     switch (monthChoice) {
+        // Months with 31 days
         case 1:
         case 3:
         case 5:
@@ -31,6 +32,7 @@ int main() {
             numDays = 31;
             break;
 
+        // Months with 30 days
         case 4:
         case 6:
         case 9:
@@ -38,6 +40,7 @@ int main() {
             numDays = 30;
             break;
 
+        // February has 28 days
         case 2:
             numDays = 28;
             break;
@@ -107,6 +110,8 @@ int main() {
             currentDayOfWeek = 0;
         }
     }
+
+    cout << endl;
 
     return 0;
 }
