@@ -22,26 +22,26 @@ int main() {
     // Get number of days
     switch (monthChoice) {
         // Months with 31 days
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
+        case 1:  // January
+        case 3:  // March
+        case 5:  // May
+        case 7:  // July
+        case 8:  // August
+        case 10: // October
+        case 12: // December
             numDays = 31;
             break;
 
         // Months with 30 days
-        case 4:
-        case 6:
-        case 9:
-        case 11:
+        case 4:  // April
+        case 6:  // June
+        case 9:  // September
+        case 11: // November
             numDays = 30;
             break;
 
         // February has 28 days
-        case 2:
+        case 2:  // February
             numDays = 28;
             break;
 
