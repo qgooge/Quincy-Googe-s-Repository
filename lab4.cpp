@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cctype>
 
 using namespace std;
 
@@ -84,6 +85,8 @@ int main()
             cout << "\nWhat item would you like? ";
             cin >> itemChoice;
 
+            itemChoice = toupper(itemChoice);
+
             // Make sure the menu choice is valid
             while (itemChoice != 'A' && itemChoice != 'B' &&
                    itemChoice != 'C' && itemChoice != 'D' &&
@@ -91,6 +94,8 @@ int main()
             {
                 cout << "Invalid choice. Please enter A, B, C, D, or E: ";
                 cin >> itemChoice;
+
+                itemChoice = toupper(itemChoice);
             }
 
             // Checkout
@@ -121,11 +126,15 @@ int main()
             cout << "What size? (S = Small, M = Medium, L = Large): ";
             cin >> sizeChoice;
 
+            sizeChoice = toupper(sizeChoice);
+
             // Make sure the size is valid
             while (sizeChoice != 'S' && sizeChoice != 'M' && sizeChoice != 'L')
             {
                 cout << "Invalid size. Please enter S, M, or L: ";
                 cin >> sizeChoice;
+
+                sizeChoice = toupper(sizeChoice);
             }
 
             // Select the price
@@ -214,6 +223,8 @@ int main()
         cout << "What tip do you choose? ";
         cin >> tipChoice;
 
+        tipChoice = toupper(tipChoice);
+
         // Calculate tip
         if (tipChoice == 'A')
         {
@@ -292,14 +303,16 @@ int main()
         cout << "\nIs there another customer? (Y/N): ";
         cin >> anotherCustomer;
 
+        anotherCustomer = toupper(anotherCustomer);
+
     } while (anotherCustomer == 'Y');
 
-    // Display daily totals
-    cout << "\nEnd of Day Report\n";
+    // Display daily summary
+    cout << "\nDaily Summary\n";
     cout << "--------------------------------------------------\n";
     cout << "Total Customers: " << totalCustomers << endl;
-    cout << fixed << setprecision(2);
-    cout << "Total Sales: $" << grandTotalSales << endl;
+    cout << "Total Sales: $" << fixed << setprecision(2) << grandTotalSales << endl;
+    cout << "--------------------------------------------------\n";
 
     return 0;
 }
