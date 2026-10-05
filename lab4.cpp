@@ -87,7 +87,7 @@ int main()
 
             itemChoice = toupper(itemChoice);
 
-            // Make sure the menu choice is valid
+            // for the menu choice
             while (itemChoice != 'A' && itemChoice != 'B' &&
                    itemChoice != 'C' && itemChoice != 'D' &&
                    itemChoice != 'E')
@@ -104,7 +104,7 @@ int main()
                 break;
             }
 
-            // Select the food
+            // for choosing drink
             if (itemChoice == 'A')
             {
                 foodName = "Caffe Latte";
@@ -128,7 +128,7 @@ int main()
 
             sizeChoice = toupper(sizeChoice);
 
-            // Make sure the size is valid
+            // for the size of drink
             while (sizeChoice != 'S' && sizeChoice != 'M' && sizeChoice != 'L')
             {
                 cout << "Invalid size. Please enter S, M, or L: ";
@@ -205,14 +205,14 @@ int main()
         // Calculate the discounted subtotal
         discountedSubtotal = subtotal - discount;
 
-        // Calculate taxes
+        // for taxes
         arkansasTax = discountedSubtotal * 0.065;
         faulknerTax = discountedSubtotal * 0.005;
         conwayTax = discountedSubtotal * 0.02125;
 
         totalTax = arkansasTax + faulknerTax + conwayTax;
 
-        // Display tip menu
+        // for tip menu
         cout << "\nTip Selection\n";
         cout << "-------------------------\n";
         cout << "A. 15%\n";
@@ -247,14 +247,14 @@ int main()
         // Calculate final total
         total = discountedSubtotal + totalTax + tip;
 
-        // Add to grand total
+        // the grand total
         grandTotalSales += total;
         totalCustomers++;
 
         // Calculate loyalty points
         int loyaltyPoints = total / 3;
 
-        // Display receipt
+        // for the receipt
         cout << fixed << setprecision(2);
 
         cout << "\nFinal Receipt\n";
@@ -287,7 +287,7 @@ int main()
         cout << "\nTip: $" << tip << endl;
         cout << "Total: $" << total << endl;
 
-        // Display loyalty points
+        // for loyalty points
         cout << "\nLoyalty Points: ";
 
         for (int i = 0; i < loyaltyPoints; i++)
@@ -307,7 +307,7 @@ int main()
 
     } while (anotherCustomer == 'Y');
 
-    // Display daily summary
+    // for daily summary
     cout << "\nDaily Summary\n";
     cout << "--------------------------------------------------\n";
     cout << "Total Customers: " << totalCustomers << endl;
