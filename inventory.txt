@@ -1,0 +1,6 @@
+Daily Inventory
+Item                  Start     Change    End       
+Caffe Latte           50        -3        47        
+Cold Brew             50        0         50        
+Chai Tea Latte        50        0         50        
+Hot Drip Coffee       50        0         50        

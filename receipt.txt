@@ -1,0 +1,25 @@
+
+Final Receipt
+--------------------------------------------------
+Customer: quincy
+
+Items
+--------------------------------------------------
+Caffe Latte  Size: S  Qty: 3  $14.25
+
+Subtotal: $14.25
+Discount: $1.43
+
+Taxes
+--------------------------------------------------
+Arkansas State Tax (6.5%)     $0.83
+Faulkner County Tax (0.5%)    $0.06
+Conway Municipal Tax (2.125%) $0.27
+Total Tax                     $1.17
+
+Tip:   $2.56
+Total: $16.56
+
+Loyalty Points: ***** (5)
+--------------------------------------------------
+

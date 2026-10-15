@@ -1,0 +1,16 @@
+Caffe Latte
+4.75
+5.50
+6.25
+Cold Brew
+4.50
+5.25
+5.95
+Chai Tea Latte
+4.50
+5.25
+5.75
+Hot Drip Coffee
+2.95
+3.50
+3.95
