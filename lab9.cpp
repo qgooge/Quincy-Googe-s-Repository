@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Function prototypes
+// Functions
 void displaySpellBanner(string spellName, string tier = "Novice", int chargeLevel = 1);
 double castSpell(string spellName = "Magic Missile", int basePower = 10, double multiplier = 1.0);
 double calculateShield(double baseShield = 15.0, double absorptionRate = 0.20);
